@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 
 # Create a title for the app
 st.title("Sitemap Generator")
-
+st.write("Drag and drop a csv with one column called 'urls' (no quotes, just urls) with urls you want in your sitemap.")
 # Create a file uploader widget for the csv input
 input_file = st.file_uploader("Upload a csv file containing URLs in a column called url", type="csv")
 
