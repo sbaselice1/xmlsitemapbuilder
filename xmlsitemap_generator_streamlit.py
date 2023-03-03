@@ -11,7 +11,7 @@ input_file = st.file_uploader("Upload a csv file containing URLs in a column cal
 
 # Check if the input file is valid
 
-if uploaded_file is None:
+if input_file is None:
     st.stop()
 else:
     # Read the csv file into a dataframe
