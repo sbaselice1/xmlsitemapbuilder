@@ -10,7 +10,10 @@ st.title("Sitemap Generator")
 input_file = st.file_uploader("Upload a csv file containing URLs in a column called url", type="csv")
 
 # Check if the input file is valid
-if input_file:
+
+if uploaded_file is None:
+    st.stop()
+else:
     # Read the csv file into a dataframe
     df = pd.read_csv(input_file)
 
